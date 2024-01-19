@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   container: {
     position: 'relative',
     height: 200,
-    width: 200
+    width: 200,
   },
   image: {
     height: 200,

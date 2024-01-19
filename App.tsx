@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   navigationContainer: {
-    flex: 1,
+    height: 940,
+    width: 640
   }
 })
