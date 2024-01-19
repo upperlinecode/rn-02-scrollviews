@@ -82,7 +82,7 @@ When you first open the app, you'll notice several issues: First, the app fills 
 
 4. (Optional) Use flexbox to center the wrapped content in the screen.
 
-### B. Implement a Flat List
+### C. Implement a Flat List
 
 1. Find the `FlatListScreen` component.
 
@@ -107,7 +107,7 @@ When you first open the app, you'll notice several issues: First, the app fills 
 
 4. Serialized elements in React require a `key` prop. Write a function for the `keyExtractor` prop for the `FlatList` component that takes `data` and `index` arguments and returns a unique key. (HINT: Use a combination of the cat's name and an index for the key!)
 
-### C. Extra Challenges
+### D. Extra Challenges
 
 **Mild**
 - Use the `TableSeparator` component to separate the elements in the `FlatList` component.
