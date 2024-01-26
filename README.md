@@ -107,7 +107,27 @@ When you first open the app, you'll notice several issues: First, the app fills 
 
 3. Replace the current `View` and `TableRow` with the `FlatList`. Pass in the `catData` object and the `renderItem` function you just created. [See the React Native docs for more info.](https://reactnative.dev/docs/flatlist)
 
+    <details>
+    <summary>Click here for the coded answer</summary>
+
+    ```javascript
+    return (
+        <FlatList
+            data={catData}
+            renderItem={renderItem}
+        />
+    )
+    ```
+    </details>
+    <br>
+
 4. Serialized elements in React require a `key` prop. Write a function for the `keyExtractor` prop for the `FlatList` component that takes `data` and `index` arguments and returns a unique key. (HINT: Use a combination of the cat's name and an index for the key!)
+
+    ```javascript
+    keyExtractor={(data, index) => `${data.name}-${index}`}
+    ```
+    </details>
+    <br>
 
 ### D. Extra Challenges
 
@@ -115,4 +135,4 @@ When you first open the app, you'll notice several issues: First, the app fills 
 - Use the `TableSeparator` component to separate the elements in the `FlatList` component.
 
 **Spicy**
-- The `ScrollView` component can be paginated! Refer to the [React Native docs](https://reactnative.dev/docs/scrollview) to turn the `ScrollView` into a paginated component that shows one cat at a time. Note that the `PhotoCard` component will need to take up the full screen for this to work. You can use the [React Native Dimensions API](https://reactnative.dev/docs/dimensions) to get the height and width of the screen.
+- The `ScrollView` component can be paginated! Refer to the [React Native docs](https://reactnative.dev/docs/scrollview) to turn the `ScrollView` into a paginated component that shows one cat at a time. Note that the `PhotoCard` component will need to take up the full screen for this to work. You can use the [React Native Dimensions API](https://reactnative.dev/docs/dimensions) to get the height and width of the screen or a ref.
