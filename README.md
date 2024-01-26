@@ -32,9 +32,11 @@ When you first open the app, you'll notice several issues: First, the app fills 
 
 ### A. Make the app responsive to the device's screen size*
 
-1. In `App.tsx`, find and remove the hardcoded height and width. While React Native uses unitless values, hardcoding a height and width prevents the app from adjusting its content to fill the screen. Hardcoded dimensions should be used judiciously.
+1. In `App.tsx`, find and remove the hardcoded height and width. While React Native uses unitless values, hardcoding a height and width prevents the app from adjusting its content to fill the screen.
 
-2. React Native uses flexbox to manage responsiveness. Use the `flex` property instead of a hardcoded width to allow this section to fill the screen as needed. [See the MDN docs if needed.](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+2. Hardcoded dimensions should be used judiciously, usually in cases where a specific fixed width or height is desired. Add a height property to the `TitleBar` component so that it takes up more space. Note that the rest of the app will need to fill the remaining screen space, requiring a fair bit more responsiveness.
+
+3. React Native uses flexbox to manage responsiveness. Use the `flex` property to allow the containers in `App.tsx` to fill the screen as needed. [See the MDN docs if needed.](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
 
 ### B. Implement a Scroll View
 

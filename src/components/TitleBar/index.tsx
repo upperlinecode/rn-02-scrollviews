@@ -12,14 +12,12 @@ export default RefreshDistances;
 
 const styles = StyleSheet.create({
   container: {
-    height: 100,
-    padding: 10,
     backgroundColor: '#34495e',
     alignItems: 'center',
     justifyContent: 'center',
   },
   text: {
     fontSize: 20,
-    color: '#2c3e50',
+    color: '#fff',
   }
 })

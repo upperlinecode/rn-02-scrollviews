@@ -42,7 +42,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: 940,
+    width: 640,
   },
   navigationContainer: {
     height: 940,
