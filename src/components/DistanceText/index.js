@@ -1,11 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-interface Props {
-  name: string;
-  distance: string;
-}
-
-const DistanceText = ({ name, distance }: Props) => {
+const DistanceText = ({ name, distance }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{ name } / </Text>

@@ -1,16 +1,15 @@
-import { ImageRequireSource } from "react-native";
-
-export interface CatData {
-  name: string;
-  photo: ImageRequireSource;
-  distance: number;
-}
+import { faker } from "@faker-js/faker";
 
 const getRandomDistance = () => {
   return Math.floor(Math.random() * (10 - 2 + 1) + 2);
 }
 
-const data: CatData[] = [
+export const messageData = Array.apply(undefined, new Array(50)).map(() => ({
+    text: faker.lorem.sentence(),
+    isSender: Math.random() >= 0.5 ? true : false,
+}));
+
+export const catData = [
   { name: 'Latte', photo: require('../../assets/cat1.jpeg'), distance: getRandomDistance() },
   { name: 'Dice', photo: require('../../assets/cat2.jpeg'), distance: getRandomDistance() },
   { name: 'Hardy', photo: require('../../assets/cat3.jpeg'), distance: getRandomDistance() },
@@ -600,5 +599,3 @@ const data: CatData[] = [
   { name: 'Puffins', photo: require('../../assets/cat19.jpeg'), distance: getRandomDistance() },
   { name: 'Checkers', photo: require('../../assets/cat20.jpeg'), distance: getRandomDistance() },
 ];
-
-export default data;
