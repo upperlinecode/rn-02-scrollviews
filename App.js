@@ -2,7 +2,7 @@ import { View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CatScreen from './src/screens/CatScreen';
-import MessageScreen from './src/screens/MessagesScreen';
+import MessagesScreen from './src/screens/MessagesScreen';
 import TitleBar from './src/components/TitleBar';
 
 const Stack = createNativeStackNavigator();
@@ -20,7 +20,7 @@ export default function App() {
           />
           <Stack.Screen
             name="Messages"
-            component={MessageScreen}
+            component={MessagesScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>
@@ -31,9 +31,11 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: 940,
+    width: 600
   },
   navigationContainer: {
-    flex: 1,
+    height: 940,
+    width: 600
   }
 })

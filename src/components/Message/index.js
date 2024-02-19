@@ -32,7 +32,6 @@ const receiverStyles = StyleSheet.create({
     container: {
         maxWidth: '40%',
         maxHeight: 300,
-        alignSelf: 'flex-start',
         backgroundColor: '#bdc3c7',
         padding: 10,
         borderRadius: 10,

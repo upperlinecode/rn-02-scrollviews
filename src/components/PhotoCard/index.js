@@ -24,7 +24,6 @@ export default PhotoCard;
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
-    flex: 1
   },
   image: {
     height: 200,
