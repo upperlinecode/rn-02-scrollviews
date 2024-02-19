@@ -1,16 +1,18 @@
-import { View, StyleSheet } from 'react-native';
+import { View, ScrollView, StyleSheet } from 'react-native';
 import Message from '../../components/Message';
 import { messageData } from '../../data';
 
 const MessageScreen = () => {
     return (
-        <View style={styles.container}>
-            {messageData.map((message, idx) => {
-                return (
-                    <Message message={message} key={`${message.text}-${idx}`} />
-                );
-            })}
-        </View>
+        <ScrollView>
+            <View style={styles.container}>
+                {messageData.map((message, idx) => {
+                    return (
+                        <Message message={message} key={`${message.text}-${idx}`} />
+                    );
+                })}
+            </View>
+        </ScrollView>
     );
 };
 

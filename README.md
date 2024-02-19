@@ -200,16 +200,16 @@ const CatScreen = () => {
 ```js
 const MessageScreen = () => {
 return (
-    <ScrollView>
-        <View style={styles.container}>
-            {messageData.map((message, idx) => {
-                return (
-                    <Message message={message} key={`${message.text}-${idx}`} />
-                );
-            })}
-        </View>
-    </ScrollView>
-);
+        <ScrollView>
+            <View style={styles.container}>
+                {messageData.map((message, idx) => {
+                    return (
+                        <Message message={message} key={`${message.text}-${idx}`} />
+                    );
+                })}
+            </View>
+        </ScrollView>
+    );
 };
 ```
 </details>
