@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
 </details>
 <br>
 
-### C. Implement a Flat List
+### B. Implement a Flat List
 
 1. The `FlatList` component is useful for rendering large amounts of data in a performant manner. It has benefits and drawbacks that are important to note. First, the `FlatList` renders data lazily, meaning it won't try to render data before it's needed. One of the main drawbacks, though, is responsiveness, particularly with grids. In our `CatScreen` page, we want to flow the photos of the cats into a grid shape and have this grid fill the available space. In a typical React application, we'd use `flex-wrap: wrap` to have the content flow as needed. Unfortunately, with a `FlatList`, the `flex-wrap` property is not supported and React Native will warn you about this.
 
