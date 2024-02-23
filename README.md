@@ -20,7 +20,7 @@ One downside to the `ScrollView` component is that it renders all child componen
 
 This is a standard React Native project. If you haven't already, follow the [Expo Go Quickstart setup guide](https://reactnative.dev/docs/environment-setup) in the React Native docs. Run `npm install` and then run `npm start`.
 
-This lab is intended to run on an iPad simulator. After running `npm start`, press `SHIFT + i` to select a simulator. Select an iPad version from the list.
+**This lab is intended to run on an iPad simulator. After running `npm start`, press `SHIFT + i` to select a simulator. Select an iPad version from the list.**
 
 ## Framing
 
@@ -34,7 +34,7 @@ When you first open the app, you'll notice several issues: First, the app fills 
 
 > Note: By design, the app in its starting state appears "broken". In sections A and B, we'll be making the app more responsive to better fill the iPad's screen. We'll also be implementing different ways of scrolling. If the app doesn't exactly fit the screen or if it doesn't scroll, don't worry--you're not doing anything wrong! We'll be fixing each of these issues throughout, so please keep following each step through to the end.
 
-1. Uh-oh! It looks like this app was made for a smaller screen! In `App.js`, find and remove the hardcoded height and width. While React Native uses unitless values, hardcoding a height and width prevents the app from adjusting its content to fill the screen. You'll notice that the app disappears, but we'll take care of that in the next step.
+1. Uh-oh! It looks like this app was hardcoded to work on a device with a different screen siz! In `App.js`, find and remove the hardcoded height and width. While React Native uses unitless values, hardcoding a height and width prevents the app from adjusting its content to fill the screen. You'll notice that the app disappears, but we'll take care of that in the next step.
 
 2. React Native uses [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) to manage responsiveness; this is enabled by default. One of the most useful CSS properties to remember when working on a React Native project is [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex), which tells an element how to grow or shrink to fill available space. We can use the `flex` property to have the app fill the space responsively. In `App.js`, give both the `container` and `navigationContainer` a `flex` property of `1` in the `styles` object.
 
