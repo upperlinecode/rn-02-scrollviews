@@ -20,7 +20,7 @@ One downside to the `ScrollView` component is that it renders all child componen
 
 This is a standard React Native project. If you haven't already, follow the [Expo Go Quickstart setup guide](https://reactnative.dev/docs/environment-setup) in the React Native docs. Run `npm install` and then run `npm start`.
 
-This lab is intended to run on an iPad simulator. After running `npm start`, press `SHIFT + i` to select a simulator. Select an iPad version from the list.
+**This lab is intended to run on an iPad simulator. After running `npm start`, press `SHIFT + i` to select a simulator. Select an iPad version from the list.**
 
 ## Framing
 
